@@ -1,0 +1,427 @@
+body{
+    background-image:url(backgroundimage.jpg) ;
+    background-size: cover;
+    background-position: center;
+    overflow-y:scroll;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h2{
+    color: antiquewhite;
+    background-color: rgb(117,54,54);
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+h1{
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(231,255,178);
+    background-color: rgb(54,117,79);
+    text-align: center;
+}
+div.Biodata{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 30px auto;
+    border: 10px solid rgb(193, 94, 94);
+    width: 70%;
+    background-color: rgb(254, 194, 194);
+    color: rgb(51, 79, 51);
+    padding: 30px;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    flex: column;
+    align-items: flex-start;
+}
+div.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px rgb(193, 94, 94);
+}
+div.Konten{
+    width: 70%;
+    gap: 40px;
+    border: 3px rgb(193, 94, 94);
+    box-sizing: border-box;
+    position: relative;
+    z-index: 5;
+    margin: 0;
+    align-items: center;
+    display: flex;
+}
+.top img{
+    height: 300px;
+    width: 225px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    border-radius: 20px 20px 20px 20px !important;
+    box-sizing: border-box;
+    border: 3px solid rgb(193, 94, 94);
+}
+.bottom img{
+    height: 300px;
+    width: 225px;
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    border-radius: 20px 20px 20px 20px;
+    object-fit: cover;
+    box-sizing: border-box;
+    border: 3px solid rgb(193, 94, 94);
+}
+.bottom{
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+    border: 3px rgb(193, 94, 94);
+}
+.top{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+    border: 3px rgb(193, 94, 94);
+}
+.Konten:hover .top{
+    opacity: 0;
+}
+.Konten:hover .bottom{
+    opacity: 1;
+}
+.Hobi{
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    clear: both;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: rgb(46, 66, 37);
+}
+.HobiBox{
+    background-color: rgb(235, 254, 194);
+    border: 8px solid rgb(173, 193, 94);
+    border-radius: 40px;
+    padding: 20pt;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 15pt;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.HobiBox:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+}
+.fotoMenari{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid rgb(46, 66, 37);
+}
+.fotoPiano{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid rgb(46, 66, 37);
+}
+.fotoFilm{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid rgb(46, 66, 37);
+}
+.JudulHobi{
+    width: 40%;
+    margin: 40px auto 20px;
+    background-color: rgb(194, 241, 254);
+    border: 6px solid rgb(50, 57, 112);
+    border-radius: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(21, 21, 67);
+    font-size: 25pt;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+.JudulHobi:hover{
+    transform: scale(1.2)
+}
+.MusicBox{
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgb(254, 238, 194);
+    border: 5px solid rgb(85, 71, 38);
+    border-radius: 35px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20pt;
+    color: rgb(63, 60, 24);
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.NamaLagu{
+    font-size: 14pt;
+    margin-top: 10px;
+}
+.MusicBox hover{
+    transform: translateY(-15px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+}
+.MusicBox audio{
+    width: 100%;
+}
+.MusicBox img{
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+    border-radius: 360px;
+    border: 3px solid rgb(63, 60, 24);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    animation: muter 15s linear infinite;
+}
+.AlbumCover img:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 0 50px rgb(66, 62, 26);
+}
+@keyframes muter{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.AlbumCover{
+    padding: 10px;
+}
+.JudulMakanan{
+    width: 40%;
+    margin: 40px auto 20px;
+    background-color: rgb(222, 194, 254);
+    border: 6px solid rgb(95, 50, 112);
+    border-radius: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(52, 21, 67);
+    font-size: 25pt;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+.JudulMakanan:hover{
+    transform: scale(1.2)
+}
+.Makanan{
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    clear: both;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: rgb(66, 37, 56);
+}
+.MakananBox{
+    background-color: rgb(255, 138, 181);
+    border: 8px solid rgb(82, 43, 65);
+    border-radius: 40px;
+    padding: 20pt;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 15pt;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.MakananBox:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+}
+.fotoSushi{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid rgb(82, 43, 65);
+}
+.fotoNasiGoreng{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid rgb(82, 43, 65);
+}
+.fotoSatePadang{
+     width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid rgb(82, 43, 65);
+}
+.JudulMinuman{
+    width: 40%;
+    margin: 40px auto 20px;
+    background-color: rgb(222, 194, 254);
+    border: 6px solid rgb(95, 50, 112);
+    border-radius: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(52, 21, 67);
+    font-size: 25pt;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+.JudulMinuman:hover{
+    transform: scale(1.2)
+}
+.Minuman{
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    clear: both;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: rgb(66, 37, 56);
+}
+.MinumanBox{
+    background-color: rgb(255, 138, 181);
+    border: 8px solid rgb(82, 43, 65);
+    border-radius: 40px;
+    padding: 20pt;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 15pt;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.MinumanBox:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+}
+.fotoMilkTea{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid rgb(82, 43, 65);
+}
+.fotoMatcha{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid rgb(82, 43, 65);
+}
+.fotoJusAlpukat{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid rgb(82, 43, 65);
+}
+.JudulTempat{
+    width: 40%;
+    margin: 40px auto 20px;
+    background-color: rgb(254, 194, 244);
+    border: 6px solid rgb(112, 50, 56);
+    border-radius: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(59, 20, 20);
+    font-size: 25pt;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+.JudulTempat:hover{
+    transform: scale(1.2)
+}
+.Tempat{
+    width: 20%;
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 2fr);
+    clear: both;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: rgb(41, 69, 39);
+    justify-content: center;
+}
+.TempatBox{
+    background-color: rgb(138, 255, 177);
+    border: 6px solid rgb(43, 82, 59);
+    border-radius: 40px;
+    padding: 20pt;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 15pt;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.TempatBox:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+}
+.fotoGreece{
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    border: 4.5px solid rgb(43, 82, 59);
+}
+.fotoLosAngeles{
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    border: 4.5px solid rgb(43, 82, 59);
+}
+.fotoJapan{
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    border: 4.5px solid rgb(43, 82, 59);
+}
+.fotoAustralia{
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    border: 4.5px solid rgb(43, 82, 59);
+}
+.fotoSwitzerland{
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    border: 4.5px solid rgb(43, 82, 59);
+}
+.fotoItaly{
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    border: 4.5px solid rgb(43, 82, 59);
+}
+.fotoEngland{
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    border: 4.5px solid rgb(43, 82, 59);
+}
+.fotoKorea{
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    border: 4.5px solid rgb(43, 82, 59);
+}
